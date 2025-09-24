@@ -1,0 +1,13 @@
+model User {
+  id        String   @id @default(cuid()) @map("_id")
+  email     String   @unique
+  password  String
+  firstName String   @map("first_name")
+  lastName  String   @map("last_name")
+  role      String
+  shelterId String   @map("shelter_id")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
