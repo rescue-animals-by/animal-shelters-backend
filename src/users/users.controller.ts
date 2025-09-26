@@ -5,7 +5,9 @@ import {
   Get,
   Param,
   Post,
-  Put, UsePipes, ValidationPipe,
+  Put,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { User as UserModel } from '@prisma/client';
