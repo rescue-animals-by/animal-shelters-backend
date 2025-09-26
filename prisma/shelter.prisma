@@ -1,0 +1,8 @@
+model Shelter {
+  id        String   @id @default(cuid()) @map("_id")
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("shelters")
+}
