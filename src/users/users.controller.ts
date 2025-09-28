@@ -23,7 +23,7 @@ export class UsersController {
     return this.usersService.getUsers();
   }
 
-  @Get()
+  @Get(':id')
   async getUserById(@Param('id') id: string): Promise<UserModel | null> {
     return this.usersService.getUserById(id);
   }
